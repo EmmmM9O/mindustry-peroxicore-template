@@ -45,6 +45,7 @@ dependencies {
 
   compileOnly("com.github.emmmM9O.mindustry-peroxicore:core:main-SNAPSHOT")
   compileOnly("com.github.emmmM9O.mindustry-peroxicore:ponder:main-SNAPSHOT")
+//  implementation("com.github.emmmM9O.mindustry-peroxicore:embed:main-SNAPSHOT")
 
   ksp("com.github.emmmM9O.mindustry-peroxicore:ksp:main-SNAPSHOT")
   kotlinCompilerPluginClasspath(

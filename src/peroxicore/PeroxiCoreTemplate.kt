@@ -25,6 +25,7 @@ import peroxicore.ponder.scene.*
 @ImportPeroxiCore
 class PeroxiCoreTemplate : Mod() {
   init {
+//    PeroxiCoreEmbed.setup()
     Events.on(EventType.ClientLoadEvent::class.java) {
       initPonder()
     }
@@ -36,12 +37,12 @@ class PeroxiCoreTemplate : Mod() {
         speed(1f)
         world(13, 11) {
           fillFloor(Blocks.stone)
-          (8 at 5).focus(5)
+          at(8, 5).focus(5)
         }
         frame(50f) {
           Weathers.rain.create()
-          (8 at 5).build(Blocks.duo)
-          (9 at 5).label("@block.duo.name", 4f)
+          at(8, 5).build(Blocks.duo)
+          at(9, 5).label("@block.duo.name", 4f)
         }
       }
     }
